@@ -1,0 +1,53 @@
+ {
+  "plants": [
+    {
+      "id": 1,
+      "name": "Aloe",
+      "image": "https://shorturl.at/pzCXY",
+      "price": 15.99,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "ZZ Plant",
+      "image": "https://shorturl.at/lrAI2",
+      "price": 25.98,
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Pilea peperomioides",
+      "image": "https://shorturl.at/mqRX6",
+      "price": 5.99,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "Pothos",
+      "image": "https://shorturl.at/kmzI7",
+      "price": 12.11,
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Jade",
+      "image": "https://shorturl.at/flHUY",
+      "price": 10.0,
+      "inStock": false
+    },
+    {
+      "id": 6,
+      "name": "Monstera Deliciosa",
+      "image": "https://shorturl.at/dfwCO",
+      "price": 29.99,
+      "inStock": true
+    },
+    {
+      "id": 7,
+      "name": "Fiddle Leaf Fig",
+      "image": "https://shorturl.at/fgqJW",
+      "price": 39.99,
+      "inStock": false
+    }
+  ]
+}
