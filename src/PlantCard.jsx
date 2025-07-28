@@ -1,4 +1,6 @@
- function PlantCard({ plant, onToggleStock }) {
+ import React from 'react';
+
+const PlantCard = ({ plant, onToggleStock }) => {
   return (
     <div className="card">
       <img src={plant.image} alt={plant.name} />
@@ -12,6 +14,6 @@
       </button>
     </div>
   );
-}
+};
 
 export default PlantCard;

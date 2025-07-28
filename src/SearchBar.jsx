@@ -1,4 +1,6 @@
- function SearchBar({ searchTerm, onChange }) {
+ import React from 'react';
+
+const SearchBar = ({ searchTerm, onChange }) => {
   return (
     <div className="search">
       <label>Search Plants:</label>
@@ -10,6 +12,6 @@
       />
     </div>
   );
-}
+};
 
 export default SearchBar;

@@ -13,66 +13,57 @@ const PlantForm = ({ onAddPlant }) => {
       name,
       description,
       image,
+      price: 0,       
+      inStock: true   
     };
 
     if (onAddPlant) {
       onAddPlant(newPlant);
     }
 
+    
     setName('');
     setDescription('');
     setImage('');
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: '2rem' }}>
+    <form onSubmit={handleSubmit} className="form">
       <h2>Add a New Plant</h2>
 
-      <div>
-        <label>Plant Name:</label><br />
+      <label>
+        Name:
         <input
           type="text"
+          placeholder="e.g. Aloe Vera"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          style={{ width: '300px', padding: '5px' }}
         />
-      </div>
+      </label>
 
-      <div style={{ marginTop: '10px' }}>
-        <label>Description:</label><br />
+      <label>
+        Description:
         <textarea
+          placeholder="Short plant description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
-          style={{ width: '300px', height: '80px', padding: '5px' }}
         />
-      </div>
+      </label>
 
-      <div style={{ marginTop: '10px' }}>
-        <label>Image URL:</label><br />
+      <label>
+        Image URL:
         <input
           type="url"
+          placeholder="https://..."
           value={image}
           onChange={(e) => setImage(e.target.value)}
-          style={{ width: '300px', padding: '5px' }}
+          required
         />
-      </div>
+      </label>
 
-      <button
-        type="submit"
-        style={{
-          marginTop: '15px',
-          padding: '10px 20px',
-          backgroundColor: '#4CAF50',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-        }}
-      >
-        Add Plant
-      </button>
+      <button type="submit">Add Plant</button>
     </form>
   );
 };
